@@ -7,18 +7,18 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
     <link rel="stylesheet" href="file:///android_asset/css/common/sm.min.css">
-
     <link rel="stylesheet" href="file:///android_asset/css/common/sm-extend.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/my-app.css">
 </head>
-<body>
+<body class="theme-pink">
     <!-- page 容器 -->
     <div class="page">
         <!-- 标题栏 -->
         <header class="bar bar-nav">
-            <a class="icon icon-me pull-left open-panel"></a>
-            <h1 class="title">标题</h1>
+            <a class="icon icon-left pull-left"></a>
+            <a class="icon icon-settings pull-right"></a>
+            <h1 class="title">买乎</h1>
         </header>
 
         <!-- 工具栏 -->
@@ -28,35 +28,239 @@
                 <span class="tab-label">首页</span>
             </a>
             <a class="tab-item" href="#">
-                <span class="icon icon-star"></span>
-                <span class="tab-label">收藏</span>
+                <span class="icon icon-gift"></span>
+                <span class="tab-label">爆品</span>
             </a>
-            <a class="tab-item" href="#">
-                <span class="icon icon-settings"></span>
-                <span class="tab-label">设置</span>
+            <a class="tab-item" href="#login">
+                <span class="icon icon-me"></span>
+                <span class="tab-label">我</span>
             </a>
         </nav>
 
-        <!-- 这里是页面内容区 -->
-        <div class="content">
-            <div class="content-block">百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展百度新闻是包含海量资讯的新闻服务平台，真实反映每时每刻的新闻热点。您可以搜索新闻事件、热点话题、人物动态、产品资讯等，快速了解它们的最新进展</div>
+        <div class="content pull-to-refresh-content" data-ptr-distance="55">
+            <!-- 默认的下拉刷新层 -->
+            <div class="pull-to-refresh-layer">
+                <div class="preloader"></div>
+                <div class="pull-to-refresh-arrow"></div>
+            </div>
+            <!-- Slider -->
+            <div class="swiper-container " data-space-between='10'>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="https://img.alicdn.com/tps/i4/TB1MoRJKpXXXXbbXVXXk0kkVXXX-1200-500.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="https://aecpm.alicdn.com/simba/img/TB1Dfo2KXXXXXXLXVXXSutbFXXX.jpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- 下面是正文 -->
+            <div class="card-container">
+                <div class="card demo-card-header-pic">
+                    <div class="card-header">【美好的事物就在午后的阳光】</div>
+                    <div valign="bottom" class="card-header color-white no-border no-padding">
+                        <img class='card-cover' src="https://img.alicdn.com/tps/TB1bl1aKpXXXXcuXFXXXXXXXXXX-400-200.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <p class="color-gray">发表于 2015/01/15</p>
+                            <p>此处是内容...</p>
+                        </div>
+                    </div>
+                    <div class="card-footer no-border">
+                        <a href="#" class="link icon icon-share"></a>
+                        <a href="#" class="link icon icon-message"></a>
+                        <a href="#" class="link icon icon-star"></a>
+                    </div>
+                </div>
+                <div class="card demo-card-header-pic">
+                    <div class="card-header">【美好的事物就在午后的阳光】</div>
+                    <div valign="bottom" class="card-header color-white no-border no-padding">
+                        <img class='card-cover' src="https://img.alicdn.com/tps/TB1GcukKpXXXXbSXpXXXXXXXXXX-400-200.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <p class="color-gray">发表于 2015/01/15</p>
+                            <p>此处是内容...</p>
+                        </div>
+                    </div>
+                    <div class="card-footer no-border">
+                        <a href="#" class="link icon icon-share"></a>
+                        <a href="#" class="link icon icon-message"></a>
+                        <a href="#" class="link icon icon-star"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- popup, panel 等放在这里 -->
-    <div class="panel-overlay"></div>
-    <!-- Left Panel with Reveal effect -->
-    <div class="panel panel-left panel-reveal">
-        <div class="content-block">
-            <p>这是一个侧栏</p>
-            <p></p>
-            <!-- Click on link with "close-panel" class will close panel -->
-            <p><a href="#" class="close-panel">关闭</a></p>
+    <div class="page" id='login'>
+        <header class="bar bar-nav">
+            <a class="icon icon-left pull-left back" style="color:#000;"></a>
+            <h1 class="title">登录</h1>
+        </header>
+        <div class="content">
+            <div class="list-block">
+                <ul>
+                    <!-- Text inputs -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-tel"></i></div>
+                            <div class="item-inner">
+                                <div class="item-input">
+                                    <input type="tel" placeholder="手机号码">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-password"></i></div>
+                            <div class="item-inner">
+                                <div class="item-input">
+                                    <input type="password" placeholder="密码">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-block">
+                <div class="row">
+                    <div class="col-100">
+                        <a href="#" class="button button-fill button-success button-big">登录</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block">
+                <p class="text-center"><a href="#find-password">忘记密码</a></p>
+                <p class="text-center">没有买乎账号？<a href="#register">立即注册</a></p>
+            </div>
         </div>
     </div>
+
+    <div class="page" id='register'>
+        <header class="bar bar-nav">
+            <a class="icon button-success icon-left pull-left back" style="color:#000;"></a>
+            <h1 class="title">注册</h1>
+        </header>
+        <div class="content">
+            <div class="list-block">
+                <ul>
+                    <!-- Text inputs -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-tel"></i></div>
+                            <div class="item-inner">
+                                <div class="item-input">
+                                    <input type="tel" placeholder="手机号码">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-password"></i></div>
+                            <div class="item-inner">
+                                <div class="item-input">
+                                    <input type="password" placeholder="密码">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="list-block">
+                <ul>
+                    <!-- Text inputs -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="row">
+                                    <div class="col-60">
+                                        <input type="number" placeholder="激活码">
+                                    </div>
+                                    <div class="col-40">
+                                        <a href="#" class="button button-big">获取激活码</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-block">
+                <div class="row">
+                    <div class="col-100">
+                        <a href="#" class="button button-fill button-success button-big">注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id='find-password'>
+        <header class="bar bar-nav">
+            <a class="icon button-success icon-left pull-left back" style="color:#000;"></a>
+            <h1 class="title">找回密码</h1>
+        </header>
+        <div class="content">
+            <div class="list-block">
+                <ul>
+                    <!-- Text inputs -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-tel"></i></div>
+                            <div class="item-inner">
+                                <div class="item-input">
+                                    <input type="tel" placeholder="手机号码">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="icon icon-form-password"></i></div>
+                            <div class="item-inner">
+                                <div class="item-input">
+                                    <input type="password" placeholder="新的密码">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="list-block">
+                <ul>
+                    <!-- Text inputs -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="row">
+                                    <div class="col-60">
+                                        <input type="number" placeholder="激活码">
+                                    </div>
+                                    <div class="col-40">
+                                        <a href="#" class="button button-big">获取激活码</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-block">
+                <div class="row">
+                    <div class="col-100">
+                        <a href="#" class="button button-fill button-warning button-big">找回密码</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <script type='text/javascript' src='file:///android_asset/js/common/zepto.min.js' charset='utf-8'></script>
     <script type='text/javascript' src='file:///android_asset/js/common/sm.min.js' charset='utf-8'></script>
     <script type='text/javascript' src='file:///android_asset/js/common/sm-extend.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='file:///android_asset/js/my-app.js' charset='utf-8'></script>
 </body>
 </html>

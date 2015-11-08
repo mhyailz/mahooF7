@@ -46,8 +46,8 @@ public class MainActivity extends Activity {
         if (info == null) {
             Toast.makeText(getApplicationContext(), "请检查网络，您的手机网络不太通畅喔~", Toast.LENGTH_SHORT).show();
         }
-        //webView.addJavascriptInterface(new JsObject(this), "app");
-        webView.loadUrl("file:///android_asset/index.html");
+        webView.addJavascriptInterface(new JsObject(this), "app");
+        webView.loadUrl("http://mahoo.me/app/index");
     }
 
     @Override
