@@ -46,23 +46,23 @@ public class MainActivity extends Activity {
         if (info == null) {
             Toast.makeText(getApplicationContext(), "请检查网络，您的手机网络不太通畅喔~", Toast.LENGTH_SHORT).show();
         }
-        //webView.addJavascriptInterface(new JsObject(this), "app");
+        webView.addJavascriptInterface(new JsObject(this), "app");
 //        webView.loadUrl("file:///android_asset/index.html");
         webView.loadUrl("http://mahoo.me/app/index");
     }
 
-//    @Override
-//    public boolean onKeyDown(int keyCode, KeyEvent event) {
-//        if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
-//            Log.i("back", webView.getUrl());
-//            String currentUrl = webView.getUrl();
-//            if (currentUrl.startsWith("file://")) {
-//                webView.loadUrl("javascript:appGoBack()");
-//            } else {
-//                webView.goBack();
-//            }
-//            return true;
-//        }
-//        return super.onKeyDown(keyCode, event);
-//    }
+    @Override
+         public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
+            Log.i("back", webView.getUrl());
+            String currentUrl = webView.getUrl();
+            if (currentUrl.startsWith("http://mahoo.me/app/index") || currentUrl.contains("#index-page")) {
+                webView.loadUrl("javascript:appGoBack()");
+            } else {
+                webView.goBack();
+            }
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
 }
