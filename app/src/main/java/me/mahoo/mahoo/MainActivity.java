@@ -54,10 +54,11 @@ public class MainActivity extends Activity {
     @Override
          public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
+            webView.loadUrl("javascript:closeAlertModule()");
             Log.i("back", webView.getUrl());
             String currentUrl = webView.getUrl();
             if (currentUrl.startsWith("http://mahoo.me/app/index") || currentUrl.contains("#index-page")) {
-                webView.loadUrl("javascript:appGoBack()");
+                webView.loadUrl("javascript:jsGoBack()");
             } else {
                 webView.goBack();
             }
